@@ -1,0 +1,144 @@
+html, body {
+    min-height: max-content;
+    margin: 0%;
+    position: relative;
+    height: 120%;
+}   
+
+.main-container {
+    height: 120%;
+}
+
+.top-container {
+    height: 74%;
+    background-image: url("TopBackground.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+/* Styling the "FREE TO PLAY" button */
+.btn {
+    position: absolute;
+    border: 5px solid black;
+    left: 42%;
+    top: 550px;
+    width: 15%;
+    height: 125px;
+    background-color: aqua; 
+    font-size: medium;
+}
+/* Styling the first navigation bar */
+.top-bar {
+    height: 72px;
+    background-color:black;
+    background-position: center;
+}
+
+.top-bar > div > img {
+    padding-left: 15px;
+    padding-top: 8px;
+}
+/* Styling the "Sign in" and "Play Now" button in the first navagation bar */
+.top-bar > nav {
+    float: right;
+}
+
+.top-bar > nav > ul {
+    margin: 0 55px;
+    padding: 0;
+}
+
+.top-bar > nav > ul > li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 33px;
+}
+
+.top-bar > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+/* Styling the second navagation bar */
+.bottom-bar {
+    position: fixed;
+    right: 25%;
+    top: 55px;
+    width: 50%;
+    height: 65px;
+    background-image: url("banner.png");
+    background-position: center;
+}
+/* Styling the drop icon button inside the second navagation bar */
+.bottom-bar > button {
+    margin-top:5px;
+    height: 55px;
+    width: 45px;
+    float:left;
+    background-image: url("dropicon.jpg");
+    background-position: center;
+}
+/* Styling the button links  inside the second navagation bar */
+.bottom-bar > nav > ul > li {
+    display: inline-block;
+    margin-left: 105px;
+    font-size: 200%;
+}
+
+.bottom-bar > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling the social media Patform hyperlinks*/
+.socials-container {
+    float:left;
+    position: relative;
+    bottom: 17%;
+    height: 30%;
+}
+    
+.socials-container > nav > ul > li {
+    display: inline-block;
+    margin-left: 130px;
+}
+
+
+/* When screen width is less than 1650px, reduce the button gap in the second navagation bar to make it more proportional */
+@media screen and (max-width: 1650px) {
+    .bottom-bar > nav > ul > li {
+        margin-left: 50px;
+    }
+}
+
+/* When screen width is less than 1200px, adjust the "FREE TO PLAY" button and second navagarion bar to look better */
+@media screen and (max-width:1200px) {
+    /* Adjust the second navagation bar to make it look more proportional */
+    .bottom-bar{
+        right: 35%;
+        width: 150px;
+    }
+    .bottom-bar > nav > ul > li {
+        
+        margin-left: 20px;
+    }
+    /* Adjust the button dimension to make it look more proportional */
+    .btn {
+        width:30%;
+        left: 35%;
+    }
+}
+/* When screen width is less than 410px, adjust the  gaps in the top navagation bar inorder for it not to overloap due to small width*/
+@media screen and (max-width:410px) {
+    .top-bar > nav > ul {
+        margin: 0 20px;
+        padding: 0;
+    }
+    .top-bar > nav > ul > li {
+        margin-left: 20px;
+    }
+}
+/* When screen width is less than 1760px, adjust social media logo gaps in order to make the website more proportional */
+@media screen and (max-width:1760px) {
+    .socials-container > nav > ul > li {
+        margin-left: 100px;
+    }
+}
